@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stock Price Chart</title>
+  </head>
+  <body>
+    <div>
+      <label for="ticker">Choose a ticker symbol:</label>
+      <select id="ticker">
+        <option value="aapl">AAPL</option>
+        <option value="goog">GOOG</option>
+        <option value="msft">MSFT</option>
+      </select>
+    </div>
+    <div>
+      <input type="checkbox" id="showVolume" />
+      <label for="showVolume">Show Volume</label>
+    </div>
+    <canvas id="stockChart"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  </body>
+</html>
